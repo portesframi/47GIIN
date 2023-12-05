@@ -127,6 +127,8 @@ public class InmuebleControler extends ComponentesGeneralControler {
         model.addColumn("Piso");
         model.addColumn("Puertas");
         model.addColumn("Parcela");
+        
+        
 
         inmuebles.addSnapshotListener((@Nullable QuerySnapshot querySnapshot, @Nullable FirestoreException error) -> {
             if (error != null) {
@@ -169,8 +171,16 @@ public class InmuebleControler extends ComponentesGeneralControler {
             }
 
             tabla.setModel(model);
+            tabla.getColumnModel().getColumn(0).setMaxWidth(0);
+            tabla.getColumnModel().getColumn(0).setMinWidth(0);
+            tabla.getColumnModel().getColumn(0).setPreferredWidth(0);
+            tabla.getColumnModel().getColumn(4).setMaxWidth(0);
+            tabla.getColumnModel().getColumn(4).setMinWidth(0);
+            tabla.getColumnModel().getColumn(4).setPreferredWidth(0);
         });
     }
+    
+    
 
     /** Actualiza inmueble
      *

@@ -57,7 +57,6 @@ public class VistaUsuario extends javax.swing.JFrame {
         btnEliminar = new javax.swing.JButton();
         btnModificar = new javax.swing.JButton();
         btnLimpiar = new javax.swing.JButton();
-        jLabel10 = new javax.swing.JLabel();
         txtId = new javax.swing.JTextField();
         jScrollPane3 = new javax.swing.JScrollPane();
         tblUsuarios = new javax.swing.JTable();
@@ -147,8 +146,9 @@ public class VistaUsuario extends javax.swing.JFrame {
         });
         jPanel1.add(btnLimpiar, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 460, -1, -1));
 
-        jLabel10.setText("Id");
-        jPanel1.add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 370, 20, -1));
+        txtId.setEditable(false);
+        txtId.setForeground(new java.awt.Color(242, 242, 242));
+        txtId.setBorder(null);
         jPanel1.add(txtId, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 390, 230, -1));
 
         tblUsuarios.setModel(new javax.swing.table.DefaultTableModel(
@@ -388,7 +388,6 @@ public class VistaUsuario extends javax.swing.JFrame {
     private javax.swing.JButton btnLimpiar;
     private javax.swing.JButton btnModificar;
     private javax.swing.JComboBox<String> cmbTipoUsuario;
-    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;

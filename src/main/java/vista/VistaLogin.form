@@ -90,7 +90,7 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Correo El&#xe9;ctronico"/>
+        <Property name="text" type="java.lang.String" value="Correo Electr&#xf3;nico"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel3">

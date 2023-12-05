@@ -112,7 +112,9 @@ public class VistaPrincipal extends javax.swing.JFrame {
         });
         jPanel2.add(btnUsuarios);
 
-        btnAdministrador.setText("Administradores");
+        btnAdministrador.setForeground(new java.awt.Color(242, 242, 242));
+        btnAdministrador.setToolTipText("");
+        btnAdministrador.setBorder(null);
         btnAdministrador.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAdministradorActionPerformed(evt);
@@ -120,7 +122,8 @@ public class VistaPrincipal extends javax.swing.JFrame {
         });
         jPanel2.add(btnAdministrador);
 
-        btnVecino.setText("Vecinos");
+        btnVecino.setForeground(new java.awt.Color(242, 242, 242));
+        btnVecino.setBorder(null);
         btnVecino.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnVecinoActionPerformed(evt);

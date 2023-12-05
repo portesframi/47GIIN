@@ -48,7 +48,7 @@ public class DialogCuentaAdministrador extends javax.swing.JDialog {
         jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         jLabel1.setText("Ingrese una cuenta de administrador para continuar");
 
-        jLabel2.setText("Coreeo");
+        jLabel2.setText("Correo");
 
         jLabel3.setText("Contraseña");
 

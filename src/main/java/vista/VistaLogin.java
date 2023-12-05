@@ -59,7 +59,7 @@ public class VistaLogin extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setText("Correo Eléctronico");
+        jLabel2.setText("Correo Electrónico");
 
         jLabel3.setText("Contraseña");
 

@@ -54,7 +54,6 @@ public class VistaInmueble extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         txtMetros = new javax.swing.JTextField();
         txtId = new javax.swing.JTextField();
-        jLabel5 = new javax.swing.JLabel();
         btnCrear = new javax.swing.JButton();
         btnEliminar = new javax.swing.JButton();
         btnModificar = new javax.swing.JButton();
@@ -74,7 +73,6 @@ public class VistaInmueble extends javax.swing.JFrame {
         txtParcela = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
         cheIsInmuebleCasa = new javax.swing.JCheckBox();
-        jLabel9 = new javax.swing.JLabel();
         txtIdVecino = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
 
@@ -86,10 +84,11 @@ public class VistaInmueble extends javax.swing.JFrame {
         jLabel4.setText("Metros:");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 270, -1, -1));
         jPanel1.add(txtMetros, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 270, 100, -1));
-        jPanel1.add(txtId, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 390, 170, -1));
 
-        jLabel5.setText("ID:");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 390, -1, -1));
+        txtId.setEditable(false);
+        txtId.setForeground(new java.awt.Color(242, 242, 242));
+        txtId.setBorder(null);
+        jPanel1.add(txtId, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 390, 170, -1));
 
         btnCrear.setText("CREAR");
         btnCrear.addActionListener(new java.awt.event.ActionListener() {
@@ -186,8 +185,9 @@ public class VistaInmueble extends javax.swing.JFrame {
         });
         jPanel1.add(cheIsInmuebleCasa, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 200, -1, -1));
 
-        jLabel9.setText("ID Vecino:");
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 410, 80, -1));
+        txtIdVecino.setEditable(false);
+        txtIdVecino.setForeground(new java.awt.Color(242, 242, 242));
+        txtIdVecino.setBorder(null);
         jPanel1.add(txtIdVecino, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 410, 170, -1));
 
         jButton1.setText("Recargar Vecinos");
@@ -628,11 +628,9 @@ public class VistaInmueble extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTable tblInmueble;
