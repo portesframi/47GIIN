@@ -135,6 +135,7 @@ public class PrincipalControler {
         VistaPrincipal.lblTipoUser.setVisible(false);
         VistaPrincipal.lblUsuario.setVisible(false);
         VistaPrincipal.btnInmueble.setVisible(false);
+        VistaPrincipal.btnServicio.setVisible(false);
         VistaPrincipal.btnAdministrador.setVisible(false);
         VistaPrincipal.btnVecino.setVisible(false);
         VistaPrincipal.btnUsuarios.setVisible(false);
@@ -149,6 +150,7 @@ public class PrincipalControler {
         VistaPrincipal.lblTipoUser.setVisible(true);
         VistaPrincipal.lblUsuario.setVisible(true);
         VistaPrincipal.btnInmueble.setVisible(true);
+        VistaPrincipal.btnServicio.setVisible(true);
         VistaPrincipal.btnAdministrador.setVisible(true);
         VistaPrincipal.btnVecino.setVisible(true);
         VistaPrincipal.btnUsuarios.setVisible(true);
