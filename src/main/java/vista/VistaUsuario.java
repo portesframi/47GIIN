@@ -65,6 +65,48 @@ public class VistaUsuario extends javax.swing.JFrame {
         setResizable(false);
 
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+<<<<<<< OURS
+        jPanel1.add(txtEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 230, 260, -1));
+
+        jLabel2.setText("Contraseña");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 210, -1, -1));
+
+        jLabel3.setText("Tipo de usuario");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 280, -1, -1));
+
+        jLabel4.setText("Nombres");
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 280, -1, -1));
+
+        jLabel5.setText("Email");
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 210, -1, -1));
+        jPanel1.add(txtNombreAppUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 230, 220, -1));
+
+        jLabel6.setText("Nombre de usuario");
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 210, -1, -1));
+
+        cmbTipoUsuario.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione una opción", "Administrador", "Vecino" }));
+        jPanel1.add(cmbTipoUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 300, 160, -1));
+
+        txtPass.setText("....");
+        txtPass.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                txtPassMouseClicked(evt);
+            }
+        });
+        jPanel1.add(txtPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 230, 160, -1));
+        jPanel1.add(txtNombresUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 300, 220, -1));
+
+        jLabel7.setText("Rep. Contraseña");
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 210, -1, -1));
+        jPanel1.add(txtDni, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 300, 122, -1));
+
+        jLabel8.setText("DNI");
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 280, -1, -1));
+        jPanel1.add(txtTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 300, 260, -1));
+
+        jLabel9.setText("Teléfono");
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 280, -1, -1));
+=======
         jPanel1.add(txtEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 230, 122, -1));
 
         jLabel2.setText("Contraseña");
@@ -105,6 +147,7 @@ public class VistaUsuario extends javax.swing.JFrame {
 
         jLabel9.setText("Teléfono");
         jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 280, -1, -1));
+>>>>>>> THEIRS
 
         txtRepPass.setText("....");
         txtRepPass.addMouseListener(new java.awt.event.MouseAdapter() {

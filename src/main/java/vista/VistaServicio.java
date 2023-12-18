@@ -64,6 +64,71 @@ public class VistaServicio extends javax.swing.JFrame {
         jPanel1.add(btnCrear, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 390, -1, -1));
 
         jLabel1.setText("Nombre:");
+<<<<<<< OURS
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 180, -1, -1));
+
+        btnEliminar.setText("ELIMINAR");
+        btnEliminar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEliminarActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnEliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 390, -1, -1));
+        jPanel1.add(txtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 210, 230, -1));
+
+        btnModificar.setText("MODIFICAR");
+        btnModificar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnModificarActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnModificar, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 390, -1, -1));
+
+        btnLimpiar.setText("LIMPIAR");
+        btnLimpiar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLimpiarActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnLimpiar, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 390, -1, -1));
+
+        txtId.setEditable(false);
+        txtId.setForeground(new java.awt.Color(242, 242, 242));
+        txtId.setBorder(null);
+        jPanel1.add(txtId, new org.netbeans.lib.awtextra.AbsoluteConstraints(95, 316, 154, -1));
+
+        tblServicio.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {},
+                {},
+                {},
+                {}
+            },
+            new String [] {
+
+            }
+        ));
+        tblServicio.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tblServicioMouseClicked(evt);
+            }
+        });
+        jScrollPane2.setViewportView(tblServicio);
+
+        jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(17, 6, 625, 151));
+
+        cheBoxObligatorio.setText("Obligatorio");
+        jPanel1.add(cheBoxObligatorio, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 260, -1, -1));
+
+        jLabel3.setText("Detalle:");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 180, -1, -1));
+
+        txtAreaDetalle.setColumns(20);
+        txtAreaDetalle.setRows(5);
+        jScrollPane1.setViewportView(txtAreaDetalle);
+
+        jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 180, 315, 122));
+=======
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 248, -1, -1));
 
         btnEliminar.setText("ELIMINAR");
@@ -127,6 +192,7 @@ public class VistaServicio extends javax.swing.JFrame {
         jScrollPane1.setViewportView(txtAreaDetalle);
 
         jPanel1.add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(327, 163, 315, 122));
+>>>>>>> THEIRS
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

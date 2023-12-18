@@ -82,6 +82,123 @@ public class VistaInmueble extends javax.swing.JFrame {
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel4.setText("Metros:");
+<<<<<<< OURS
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 300, -1, -1));
+        jPanel1.add(txtMetros, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 300, 80, -1));
+
+        txtId.setEditable(false);
+        txtId.setForeground(new java.awt.Color(242, 242, 242));
+        txtId.setBorder(null);
+        jPanel1.add(txtId, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 390, 170, -1));
+
+        btnCrear.setText("CREAR");
+        btnCrear.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCrearActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnCrear, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 510, -1, -1));
+
+        btnEliminar.setText("ELIMINAR");
+        btnEliminar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEliminarActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnEliminar, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 510, -1, -1));
+
+        btnModificar.setText("MODIFICAR");
+        btnModificar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnModificarActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnModificar, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 510, -1, -1));
+
+        btnLimpiar.setText("LIMPIAR");
+        btnLimpiar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLimpiarActionPerformed(evt);
+            }
+        });
+        jPanel1.add(btnLimpiar, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 510, -1, -1));
+
+        tblInmueble.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {},
+                {},
+                {},
+                {}
+            },
+            new String [] {
+
+            }
+        ));
+        tblInmueble.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                tblInmuebleMouseClicked(evt);
+            }
+        });
+        jScrollPane2.setViewportView(tblInmueble);
+
+        jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 780, 170));
+
+        jLabel1.setText("Domicilio:");
+        jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 250, -1, -1));
+        jPanel1.add(txtDomicilio, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 250, 310, -1));
+        jPanel1.add(txtNumero, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 250, 80, -1));
+
+        jLabel2.setText("Número:");
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 250, -1, -1));
+
+        jLabel3.setText("Vecino:");
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 300, -1, -1));
+
+        cmbVecino.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                cmbVecinoItemStateChanged(evt);
+            }
+        });
+        cmbVecino.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmbVecinoActionPerformed(evt);
+            }
+        });
+        jPanel1.add(cmbVecino, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 300, 120, -1));
+        jPanel1.add(txtPiso, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 360, 80, -1));
+
+        jLabel7.setText("Piso:");
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 360, -1, -1));
+        jPanel1.add(txtPuerta, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 360, 120, -1));
+
+        jLabel6.setText("Puerta:");
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 360, -1, -1));
+        jPanel1.add(txtParcela, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 360, 80, -1));
+
+        jLabel8.setText("Parcela:");
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 360, -1, -1));
+
+        cheIsInmuebleCasa.setText("Es inmueble casa");
+        cheIsInmuebleCasa.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cheIsInmuebleCasaActionPerformed(evt);
+            }
+        });
+        jPanel1.add(cheIsInmuebleCasa, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 210, -1, -1));
+
+        txtIdVecino.setEditable(false);
+        txtIdVecino.setForeground(new java.awt.Color(242, 242, 242));
+        txtIdVecino.setBorder(null);
+        jPanel1.add(txtIdVecino, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 410, 170, -1));
+
+        jButton1.setText("Recargar Vecinos");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 300, -1, -1));
+=======
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 270, -1, -1));
         jPanel1.add(txtMetros, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 270, 100, -1));
 
@@ -197,6 +314,7 @@ public class VistaInmueble extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 190, -1, -1));
+>>>>>>> THEIRS
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

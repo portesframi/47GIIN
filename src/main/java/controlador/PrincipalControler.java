@@ -139,6 +139,8 @@ public class PrincipalControler {
         VistaPrincipal.btnAdministrador.setVisible(false);
         VistaPrincipal.btnVecino.setVisible(false);
         VistaPrincipal.btnUsuarios.setVisible(false);
+<<<<<<< OURS
+        VistaPrincipal.btnProveedor.setVisible(false);
         VistaPrincipal.panelVecino.setVisible(false);
     }
 
@@ -154,6 +156,24 @@ public class PrincipalControler {
         VistaPrincipal.btnAdministrador.setVisible(true);
         VistaPrincipal.btnVecino.setVisible(true);
         VistaPrincipal.btnUsuarios.setVisible(true);
+        VistaPrincipal.btnProveedor.setVisible(true);
+=======
+        VistaPrincipal.panelVecino.setVisible(false);
+    }
+
+    /**
+     * Permite ver los menus 
+     */
+    public void verTodosComponentes() {
+
+        VistaPrincipal.lblTipoUser.setVisible(true);
+        VistaPrincipal.lblUsuario.setVisible(true);
+        VistaPrincipal.btnInmueble.setVisible(true);
+        VistaPrincipal.btnServicio.setVisible(true);
+        VistaPrincipal.btnAdministrador.setVisible(true);
+        VistaPrincipal.btnVecino.setVisible(true);
+        VistaPrincipal.btnUsuarios.setVisible(true);
+>>>>>>> THEIRS
         VistaPrincipal.panelVecino.setVisible(true);
     }
 
