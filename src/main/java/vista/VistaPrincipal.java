@@ -11,7 +11,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
-/** Asignatura Proyecto de ingenieria de software
+/** Proyecto asignatura Proyectos de programación 
  *
  * @author frami
  */
@@ -30,10 +30,13 @@ public class VistaPrincipal extends javax.swing.JFrame {
     /**
      * Creates new form VistaPrincipal
      */
+    VistaProveedor vp = new VistaProveedor();
+    VistaGasto vg = new VistaGasto();
     VistaServicio vs = new VistaServicio();
     VistaInmueble vi = new VistaInmueble();
     VistaVecino vv = new VistaVecino();
     VistaUsuario vu = new VistaUsuario();
+    VistaConcepto vc = new VistaConcepto();
     VistaAdministrador va  = new VistaAdministrador();
     PrincipalControler pc = new PrincipalControler();
     ComponentesGeneralControler cgc = new ComponentesGeneralControler();
@@ -74,9 +77,13 @@ public class VistaPrincipal extends javax.swing.JFrame {
         btnUsuarios = new javax.swing.JButton();
         btnAdministrador = new javax.swing.JButton();
         btnVecino = new javax.swing.JButton();
+        jPanel3 = new javax.swing.JPanel();
+        btnConcepto = new javax.swing.JButton();
+        btnGasto = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
         btnInmueble = new javax.swing.JButton();
         btnServicio = new javax.swing.JButton();
+        btnProveedor = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setResizable(false);
@@ -101,7 +108,7 @@ public class VistaPrincipal extends javax.swing.JFrame {
         getContentPane().add(lblUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 32, 122, -1));
 
         panelVecino.setLayout(new java.awt.GridLayout(1, 0));
-        getContentPane().add(panelVecino, new org.netbeans.lib.awtextra.AbsoluteConstraints(441, 183, 440, 100));
+        getContentPane().add(panelVecino, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 180, 350, 90));
 
         jPanel2.setLayout(new java.awt.GridLayout(1, 0));
 
@@ -133,6 +140,26 @@ public class VistaPrincipal extends javax.swing.JFrame {
 
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 320, 480, 69));
 
+        jPanel3.setLayout(new java.awt.GridLayout(1, 0));
+
+        btnConcepto.setText("Conceptos");
+        btnConcepto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnConceptoActionPerformed(evt);
+            }
+        });
+        jPanel3.add(btnConcepto);
+
+        btnGasto.setText("Gastos");
+        btnGasto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGastoActionPerformed(evt);
+            }
+        });
+        jPanel3.add(btnGasto);
+
+        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 180, 430, 90));
+
         jPanel4.setLayout(new java.awt.GridLayout(1, 0));
 
         btnInmueble.setText("Inmuebles");
@@ -151,7 +178,15 @@ public class VistaPrincipal extends javax.swing.JFrame {
         });
         jPanel4.add(btnServicio);
 
-        getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 60, 550, 80));
+        btnProveedor.setText("Proveedores");
+        btnProveedor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnProveedorActionPerformed(evt);
+            }
+        });
+        jPanel4.add(btnProveedor);
+
+        getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 60, 750, 80));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -173,9 +208,18 @@ public class VistaPrincipal extends javax.swing.JFrame {
             // Aquí realizas las acciones para salir al Login
             // Por ejemplo:
 
-            if (vs.isActive() || vs.isShowing() || vs.isVisible()) {
-                vs.dispose();
+            if (vp.isActive() || vp.isShowing() || vp.isVisible()) {
+                vp.dispose();
             }
+
+            if (vg.isActive() || vg.isShowing() || vg.isVisible()) {
+                vp.dispose();
+            }
+
+            if (vs.isActive() || vs.isShowing() || vs.isVisible()) {
+                vp.dispose();
+            }
+
             if (vi.isActive() || vi.isShowing() || vi.isVisible()) {
                 vi.dispose();
             }
@@ -188,9 +232,17 @@ public class VistaPrincipal extends javax.swing.JFrame {
                 vu.dispose();
             }
 
+            if (vc.isActive() || vc.isShowing() || vc.isVisible()) {
+                vc.dispose();
+            }
+
             if (va.isActive() || va.isShowing() || va.isVisible()) {
                 va.dispose();
             }
+
+
+
+
 
             VistaLogin vl = new VistaLogin();
             vl.setVisible(true);
@@ -200,10 +252,17 @@ public class VistaPrincipal extends javax.swing.JFrame {
 
     private void btnServicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnServicioActionPerformed
         if (vs.isActive() || vs.isShowing() || vs.isVisible()) {
-        vs.dispose();
+            vp.dispose();
         }
         vs.setVisible(true);
     }//GEN-LAST:event_btnServicioActionPerformed
+
+    private void btnGastoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGastoActionPerformed
+        if (vg.isActive() || vg.isShowing() || vg.isVisible()) {
+            vp.dispose();
+        }
+        vg.setVisible(true);
+    }//GEN-LAST:event_btnGastoActionPerformed
 
     private void btnVecinoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVecinoActionPerformed
         if (vv.isActive() || vv.isShowing() || vv.isVisible()) {
@@ -220,12 +279,26 @@ public class VistaPrincipal extends javax.swing.JFrame {
         vi.setVisible(true);
     }//GEN-LAST:event_btnInmuebleActionPerformed
 
+    private void btnProveedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProveedorActionPerformed
+        if (vp.isActive() || vp.isShowing() || vp.isVisible()) {
+            vp.dispose();
+        }
+        vp.setVisible(true);
+    }//GEN-LAST:event_btnProveedorActionPerformed
+
     private void btnAdministradorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAdministradorActionPerformed
         if (va.isActive() || va.isShowing() || va.isVisible()) {
             va.dispose();
         }
         va.setVisible(true);
     }//GEN-LAST:event_btnAdministradorActionPerformed
+
+    private void btnConceptoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConceptoActionPerformed
+        if (vc.isActive() || vc.isShowing() || vc.isVisible()) {
+            vc.dispose();
+        }
+        vc.setVisible(true);
+    }//GEN-LAST:event_btnConceptoActionPerformed
 
     private void btnUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUsuariosActionPerformed
         if (vu.isActive() || vu.isShowing() || vu.isVisible()) {
@@ -254,9 +327,6 @@ public class VistaPrincipal extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(VistaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
 
         //</editor-fold>
 
@@ -268,11 +338,15 @@ public class VistaPrincipal extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public static javax.swing.JButton btnAdministrador;
+    public static javax.swing.JButton btnConcepto;
+    public static javax.swing.JButton btnGasto;
     public static javax.swing.JButton btnInmueble;
+    public static javax.swing.JButton btnProveedor;
     public static javax.swing.JButton btnServicio;
     public static javax.swing.JButton btnUsuarios;
     public static javax.swing.JButton btnVecino;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     public static javax.swing.JLabel lblTipoUser;
     public static javax.swing.JLabel lblUsuario;

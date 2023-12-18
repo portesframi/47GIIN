@@ -144,7 +144,7 @@ public class VistaInmueble extends javax.swing.JFrame {
 
         jLabel1.setText("Domicilio:");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 250, -1, -1));
-        jPanel1.add(txtDomicilio, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 250, 100, -1));
+        jPanel1.add(txtDomicilio, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 250, 320, -1));
         jPanel1.add(txtNumero, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 290, 100, -1));
 
         jLabel2.setText("Número:");
@@ -183,7 +183,7 @@ public class VistaInmueble extends javax.swing.JFrame {
                 cheIsInmuebleCasaActionPerformed(evt);
             }
         });
-        jPanel1.add(cheIsInmuebleCasa, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 200, -1, -1));
+        jPanel1.add(cheIsInmuebleCasa, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 200, -1, -1));
 
         txtIdVecino.setEditable(false);
         txtIdVecino.setForeground(new java.awt.Color(242, 242, 242));

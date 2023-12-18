@@ -11,7 +11,7 @@ import java.util.logging.Logger;
 import vista.VistaLogin;
 import vista.VistaPrincipal;
 
-/** Asignatura Proyecto de ingenieria de software
+/** Proyecto asignatura Proyectos de programación 
  *
  * @author frami
  */
@@ -134,8 +134,11 @@ public class PrincipalControler {
 
         VistaPrincipal.lblTipoUser.setVisible(false);
         VistaPrincipal.lblUsuario.setVisible(false);
-        VistaPrincipal.btnInmueble.setVisible(false);
         VistaPrincipal.btnServicio.setVisible(false);
+        VistaPrincipal.btnInmueble.setVisible(false);
+        VistaPrincipal.btnGasto.setVisible(false);
+        VistaPrincipal.btnProveedor.setVisible(false);
+        VistaPrincipal.btnConcepto.setVisible(false);
         VistaPrincipal.btnAdministrador.setVisible(false);
         VistaPrincipal.btnVecino.setVisible(false);
         VistaPrincipal.btnUsuarios.setVisible(false);
@@ -149,8 +152,11 @@ public class PrincipalControler {
 
         VistaPrincipal.lblTipoUser.setVisible(true);
         VistaPrincipal.lblUsuario.setVisible(true);
-        VistaPrincipal.btnInmueble.setVisible(true);
         VistaPrincipal.btnServicio.setVisible(true);
+        VistaPrincipal.btnInmueble.setVisible(true);
+        VistaPrincipal.btnGasto.setVisible(true);
+        VistaPrincipal.btnProveedor.setVisible(true);
+        VistaPrincipal.btnConcepto.setVisible(true);
         VistaPrincipal.btnAdministrador.setVisible(true);
         VistaPrincipal.btnVecino.setVisible(true);
         VistaPrincipal.btnUsuarios.setVisible(true);
@@ -163,7 +169,6 @@ public class PrincipalControler {
     public void ocultarComponetesVecino() {
 
         VistaPrincipal.panelVecino.setVisible(false);
-
     }
     
     /**
