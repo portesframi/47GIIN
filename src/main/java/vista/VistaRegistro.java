@@ -70,26 +70,26 @@ public class VistaRegistro extends javax.swing.JFrame {
             }
         });
         jPanel1.add(btnRegistrar, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 360, 132, -1));
-        jPanel1.add(txtEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 300, 122, -1));
+        jPanel1.add(txtEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 300, 280, -1));
 
         jLabel2.setText("Contraseña");
-        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 80, -1, -1));
+        jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 80, -1, -1));
 
         jLabel3.setText("Tipo de usuario");
-        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 150, -1, -1));
+        jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 150, -1, -1));
 
         jLabel4.setText("Nombres");
-        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(44, 221, -1, -1));
+        jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, -1, -1));
 
         jLabel5.setText("Email");
-        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 280, -1, -1));
-        jPanel1.add(txtNombreAppUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(24, 41, 122, -1));
+        jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 280, -1, -1));
+        jPanel1.add(txtNombreAppUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(24, 41, 270, -1));
 
         jLabel6.setText("Nombre de usuario");
-        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(44, 19, -1, -1));
+        jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, -1, -1));
 
         cmbTipoUsuario.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione una opción", "Administrador", "Vecino" }));
-        jPanel1.add(cmbTipoUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 170, 122, -1));
+        jPanel1.add(cmbTipoUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 150, -1));
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel1.setText("Iniciar sesión");
@@ -106,19 +106,24 @@ public class VistaRegistro extends javax.swing.JFrame {
                 txtPassMouseClicked(evt);
             }
         });
-        jPanel1.add(txtPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, 122, -1));
-        jPanel1.add(txtNombresUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 240, 122, -1));
+        txtPass.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtPassActionPerformed(evt);
+            }
+        });
+        jPanel1.add(txtPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, 150, -1));
+        jPanel1.add(txtNombresUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 240, 150, -1));
 
         jLabel7.setText("Rep. Contraseña");
-        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 80, -1, -1));
+        jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 80, -1, -1));
         jPanel1.add(txtDni, new org.netbeans.lib.awtextra.AbsoluteConstraints(182, 171, 122, -1));
 
         jLabel8.setText("DNI");
-        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 150, -1, -1));
+        jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 150, -1, -1));
         jPanel1.add(txtTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(182, 243, 122, -1));
 
         jLabel9.setText("Teléfono");
-        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(202, 221, -1, -1));
+        jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 220, -1, -1));
 
         txtRepPass.setText("....");
         txtRepPass.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -217,6 +222,10 @@ public class VistaRegistro extends javax.swing.JFrame {
     private void txtRepPassMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtRepPassMouseClicked
         rc.isPasswordFieldClicked(txtRepPass);
     }//GEN-LAST:event_txtRepPassMouseClicked
+
+    private void txtPassActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPassActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtPassActionPerformed
 
     /** the command line arguments
      * @param args the command line arguments

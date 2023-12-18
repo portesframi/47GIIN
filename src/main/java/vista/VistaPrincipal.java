@@ -30,6 +30,7 @@ public class VistaPrincipal extends javax.swing.JFrame {
     /**
      * Creates new form VistaPrincipal
      */
+    VistaProveedor vp = new VistaProveedor();
     VistaServicio vs = new VistaServicio();
     VistaInmueble vi = new VistaInmueble();
     VistaVecino vv = new VistaVecino();
@@ -77,6 +78,7 @@ public class VistaPrincipal extends javax.swing.JFrame {
         jPanel4 = new javax.swing.JPanel();
         btnInmueble = new javax.swing.JButton();
         btnServicio = new javax.swing.JButton();
+        btnProveedor = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setResizable(false);
@@ -151,6 +153,14 @@ public class VistaPrincipal extends javax.swing.JFrame {
         });
         jPanel4.add(btnServicio);
 
+        btnProveedor.setText("Proveedores");
+        btnProveedor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnProveedorActionPerformed(evt);
+            }
+        });
+        jPanel4.add(btnProveedor);
+
         getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 60, 550, 80));
 
         pack();
@@ -173,9 +183,14 @@ public class VistaPrincipal extends javax.swing.JFrame {
             // Aquí realizas las acciones para salir al Login
             // Por ejemplo:
 
-            if (vs.isActive() || vs.isShowing() || vs.isVisible()) {
-                vs.dispose();
+            if (vp.isActive() || vp.isShowing() || vp.isVisible()) {
+                vp.dispose();
             }
+
+            if (vs.isActive() || vs.isShowing() || vs.isVisible()) {
+                vp.dispose();
+            }
+
             if (vi.isActive() || vi.isShowing() || vi.isVisible()) {
                 vi.dispose();
             }
@@ -200,7 +215,7 @@ public class VistaPrincipal extends javax.swing.JFrame {
 
     private void btnServicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnServicioActionPerformed
         if (vs.isActive() || vs.isShowing() || vs.isVisible()) {
-        vs.dispose();
+            vp.dispose();
         }
         vs.setVisible(true);
     }//GEN-LAST:event_btnServicioActionPerformed
@@ -219,6 +234,13 @@ public class VistaPrincipal extends javax.swing.JFrame {
         }
         vi.setVisible(true);
     }//GEN-LAST:event_btnInmuebleActionPerformed
+
+    private void btnProveedorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProveedorActionPerformed
+        if (vp.isActive() || vp.isShowing() || vp.isVisible()) {
+            vp.dispose();
+        }
+        vp.setVisible(true);
+    }//GEN-LAST:event_btnProveedorActionPerformed
 
     private void btnAdministradorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAdministradorActionPerformed
         if (va.isActive() || va.isShowing() || va.isVisible()) {
@@ -254,9 +276,6 @@ public class VistaPrincipal extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(VistaPrincipal.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
-        //</editor-fold>
 
         //</editor-fold>
 
@@ -269,6 +288,7 @@ public class VistaPrincipal extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public static javax.swing.JButton btnAdministrador;
     public static javax.swing.JButton btnInmueble;
+    public static javax.swing.JButton btnProveedor;
     public static javax.swing.JButton btnServicio;
     public static javax.swing.JButton btnUsuarios;
     public static javax.swing.JButton btnVecino;
