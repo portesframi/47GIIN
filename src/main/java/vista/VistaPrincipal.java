@@ -31,6 +31,7 @@ public class VistaPrincipal extends javax.swing.JFrame {
      * Creates new form VistaPrincipal
      */
     VistaProveedor vp = new VistaProveedor();
+    VistaLiquidacion vl = new VistaLiquidacion();
     VistaGasto vg = new VistaGasto();
     VistaServicio vs = new VistaServicio();
     VistaInmueble vi = new VistaInmueble();
@@ -79,6 +80,7 @@ public class VistaPrincipal extends javax.swing.JFrame {
         btnVecino = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
         btnConcepto = new javax.swing.JButton();
+        btnLiquidacion = new javax.swing.JButton();
         btnGasto = new javax.swing.JButton();
         jPanel4 = new javax.swing.JPanel();
         btnInmueble = new javax.swing.JButton();
@@ -98,7 +100,7 @@ public class VistaPrincipal extends javax.swing.JFrame {
                 txtsalirActionPerformed(evt);
             }
         });
-        getContentPane().add(txtsalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 370, 190, -1));
+        getContentPane().add(txtsalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 360, 190, -1));
 
         lblTipoUser.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         lblTipoUser.setText("Tipo de Usuario");
@@ -108,7 +110,7 @@ public class VistaPrincipal extends javax.swing.JFrame {
         getContentPane().add(lblUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 32, 122, -1));
 
         panelVecino.setLayout(new java.awt.GridLayout(1, 0));
-        getContentPane().add(panelVecino, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 180, 350, 90));
+        getContentPane().add(panelVecino, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 180, 130, 100));
 
         jPanel2.setLayout(new java.awt.GridLayout(1, 0));
 
@@ -138,7 +140,7 @@ public class VistaPrincipal extends javax.swing.JFrame {
         });
         jPanel2.add(btnVecino);
 
-        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 320, 480, 69));
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 310, 480, 69));
 
         jPanel3.setLayout(new java.awt.GridLayout(1, 0));
 
@@ -150,6 +152,14 @@ public class VistaPrincipal extends javax.swing.JFrame {
         });
         jPanel3.add(btnConcepto);
 
+        btnLiquidacion.setText("Liquidaciones");
+        btnLiquidacion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLiquidacionActionPerformed(evt);
+            }
+        });
+        jPanel3.add(btnLiquidacion);
+
         btnGasto.setText("Gastos");
         btnGasto.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -158,7 +168,7 @@ public class VistaPrincipal extends javax.swing.JFrame {
         });
         jPanel3.add(btnGasto);
 
-        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 180, 430, 90));
+        getContentPane().add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 190, 550, 90));
 
         jPanel4.setLayout(new java.awt.GridLayout(1, 0));
 
@@ -186,7 +196,7 @@ public class VistaPrincipal extends javax.swing.JFrame {
         });
         jPanel4.add(btnProveedor);
 
-        getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 60, 750, 80));
+        getContentPane().add(jPanel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 70, 550, 80));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -210,6 +220,10 @@ public class VistaPrincipal extends javax.swing.JFrame {
 
             if (vp.isActive() || vp.isShowing() || vp.isVisible()) {
                 vp.dispose();
+            }
+
+            if (vl.isActive() || vl.isShowing() || vl.isVisible()) {
+                vl.dispose();
             }
 
             if (vg.isActive() || vg.isShowing() || vg.isVisible()) {
@@ -240,10 +254,6 @@ public class VistaPrincipal extends javax.swing.JFrame {
                 va.dispose();
             }
 
-
-
-
-
             VistaLogin vl = new VistaLogin();
             vl.setVisible(true);
             this.dispose(); // Cierras la ventana actual
@@ -263,6 +273,13 @@ public class VistaPrincipal extends javax.swing.JFrame {
         }
         vg.setVisible(true);
     }//GEN-LAST:event_btnGastoActionPerformed
+
+    private void btnLiquidacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLiquidacionActionPerformed
+        if (vl.isActive() || vl.isShowing() || vl.isVisible()) {
+            vl.dispose();
+        }
+        vl.setVisible(true);
+    }//GEN-LAST:event_btnLiquidacionActionPerformed
 
     private void btnVecinoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVecinoActionPerformed
         if (vv.isActive() || vv.isShowing() || vv.isVisible()) {
@@ -341,6 +358,7 @@ public class VistaPrincipal extends javax.swing.JFrame {
     public static javax.swing.JButton btnConcepto;
     public static javax.swing.JButton btnGasto;
     public static javax.swing.JButton btnInmueble;
+    public static javax.swing.JButton btnLiquidacion;
     public static javax.swing.JButton btnProveedor;
     public static javax.swing.JButton btnServicio;
     public static javax.swing.JButton btnUsuarios;
