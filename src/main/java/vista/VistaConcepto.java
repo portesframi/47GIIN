@@ -118,7 +118,7 @@ public class VistaConcepto extends javax.swing.JFrame {
         });
         jPanel1.add(btnLimpiar, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 460, -1, -1));
 
-        jLabel3.setText("Los conceptos deben ser separador por ;");
+        jLabel3.setText("Lista de conceptos (deben ser separador por ;)");
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 290, -1, -1));
 
         txtAreaConceptoMultiple.setColumns(20);
@@ -350,6 +350,7 @@ public class VistaConcepto extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(VistaConcepto.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
