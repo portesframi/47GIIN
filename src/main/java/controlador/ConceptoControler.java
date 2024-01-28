@@ -19,7 +19,7 @@ import modelo.ConceptoSimple;
 import providers.ConceptoMultipleProvider;
 import providers.ConceptoSimpleProvider;
 
-/** Proyecto asignatura Proyectos de programación 
+/** Asignatura Proyecto de ingenieria de software
  *
  * @author frami
  */

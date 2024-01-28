@@ -5,7 +5,7 @@ import javax.swing.DefaultComboBoxModel;
 import javax.swing.JComboBox;
 import javax.swing.JOptionPane;
 
-/** Proyecto asignatura Proyectos de programación 
+/** Asignatura Proyecto de ingenieria de software
  *
  * @author frami
  */

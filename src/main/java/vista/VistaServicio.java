@@ -63,7 +63,7 @@ public class VistaServicio extends javax.swing.JFrame {
         });
         jPanel1.add(btnCrear, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 390, -1, -1));
 
-        jLabel1.setText("Nombre:");
+        jLabel1.setText("Nombre: *");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 180, -1, -1));
 
         btnEliminar.setText("ELIMINAR");

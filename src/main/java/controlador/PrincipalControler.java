@@ -11,7 +11,7 @@ import java.util.logging.Logger;
 import vista.VistaLogin;
 import vista.VistaPrincipal;
 
-/** Proyecto asignatura Proyectos de programación 
+/** Asignatura Proyecto de ingenieria de software 
  *
  * @author frami
  */

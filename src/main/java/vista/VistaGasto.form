@@ -257,27 +257,27 @@
         </Container>
         <Component class="javax.swing.JLabel" name="jLabel3">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Fecha gasto:"/>
+            <Property name="text" type="java.lang.String" value="Fecha gasto: *"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel4">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Concepto:"/>
+            <Property name="text" type="java.lang.String" value="Concepto: *"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel6">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Proveedor:"/>
+            <Property name="text" type="java.lang.String" value="Proveedor: *"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel7">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Fecha pago:"/>
+            <Property name="text" type="java.lang.String" value="Fecha pago: *"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel8">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Importe:"/>
+            <Property name="text" type="java.lang.String" value="Importe: *"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="txtId">
@@ -295,7 +295,7 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel10">
           <Properties>
-            <Property name="text" type="java.lang.String" value="N&#xfa;mero comprobante:"/>
+            <Property name="text" type="java.lang.String" value="N&#xfa;mero comprobante: *"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="txtNumeroComprobante">
@@ -340,7 +340,7 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel5">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Servicio:"/>
+            <Property name="text" type="java.lang.String" value="Servicio: *"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JComboBox" name="cmbLiquidacion">
@@ -355,7 +355,7 @@
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel9">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Liquidaci&#xf3;n:"/>
+            <Property name="text" type="java.lang.String" value="Liquidaci&#xf3;n: *"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JTextField" name="txtIdServicio">

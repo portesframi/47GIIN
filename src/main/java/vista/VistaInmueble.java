@@ -142,7 +142,7 @@ public class VistaInmueble extends javax.swing.JFrame {
 
         jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, 780, 170));
 
-        jLabel1.setText("Domicilio:");
+        jLabel1.setText("Domicilio: *");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 250, -1, -1));
         jPanel1.add(txtDomicilio, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 250, 320, -1));
         jPanel1.add(txtNumero, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 290, 100, -1));
@@ -150,7 +150,7 @@ public class VistaInmueble extends javax.swing.JFrame {
         jLabel2.setText("Número:");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 290, -1, -1));
 
-        jLabel3.setText("Vecino:");
+        jLabel3.setText("Vecino: *");
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 230, -1, -1));
 
         cmbVecino.addItemListener(new java.awt.event.ItemListener() {

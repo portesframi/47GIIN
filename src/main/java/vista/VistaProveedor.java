@@ -72,15 +72,15 @@ public class VistaProveedor extends javax.swing.JFrame {
 
         jPanel1.add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(33, 6, 558, 151));
 
-        jLabel1.setText("Nombre:");
+        jLabel1.setText("Nombre: *");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 180, -1, -1));
         jPanel1.add(txtNombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 180, 210, -1));
         jPanel1.add(txtEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 220, 210, -1));
 
-        jLabel2.setText("E-mail:");
+        jLabel2.setText("E-mail: *");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 220, -1, -1));
 
-        jLabel3.setText("Telefono:");
+        jLabel3.setText("Telefono: *");
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 180, 80, -1));
         jPanel1.add(txtTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 180, 170, -1));
 

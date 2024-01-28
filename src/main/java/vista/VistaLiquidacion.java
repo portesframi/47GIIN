@@ -3,6 +3,7 @@ package vista;
 import com.google.cloud.firestore.DocumentReference;
 import com.google.cloud.firestore.Firestore;
 import com.mycompany.viuproyecto.Conexion;
+import controlador.DetalleLiquidacionControler;
 import controlador.LiquidacionControler;
 import java.io.IOException;
 import java.text.ParseException;
@@ -20,7 +21,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
-/** Proyecto asignatura Proyectos de programación 
+/** Asignatura Proyecto de ingenieria de software
  *
  * @author frami
  */
@@ -30,6 +31,7 @@ public class VistaLiquidacion extends javax.swing.JFrame {
      * Creates new form VistaLiquidacion
      */
     LiquidacionControler lc = new LiquidacionControler();
+    DetalleLiquidacionControler dlc = new DetalleLiquidacionControler();
     private Firestore db;
 
     /**
@@ -47,7 +49,13 @@ public class VistaLiquidacion extends javax.swing.JFrame {
         txtId.setEditable(false);
         setTitle("Ventana para la gestión de las liquidaciones");
         this.setLocationRelativeTo(null);
-        
+        try {
+            LiquidacionControler.cargarComboLiquidacion(cmbLiquidacion);
+
+        } catch (InterruptedException | ExecutionException | IOException ex) {
+            Logger.getLogger(VistaDetalleLiquidacion.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
     }
 
     /**
@@ -92,7 +100,7 @@ public class VistaLiquidacion extends javax.swing.JFrame {
         });
         jPanel1.add(btnLimpiar, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 510, -1, -1));
 
-        jLabel2.setText("Fecha fin");
+        jLabel2.setText("Fecha fin: *");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 230, 110, -1));
 
         jLabel4.setText("Detalle:");
@@ -126,7 +134,7 @@ public class VistaLiquidacion extends javax.swing.JFrame {
         });
         jPanel1.add(btnCrear, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 510, -1, -1));
 
-        jLabel1.setText("Fecha inicio:");
+        jLabel1.setText("Fecha inicio: *");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 180, 120, -1));
 
         btnEliminar.setText("ELIMINAR");
@@ -147,7 +155,6 @@ public class VistaLiquidacion extends javax.swing.JFrame {
         jPanel1.add(jFechaFin, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 230, 190, -1));
         jPanel1.add(jFechaInicio, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 180, 190, -1));
 
-        txtId.setEditable(false);
         txtId.setForeground(new java.awt.Color(242, 242, 242));
         txtId.setBorder(null);
         jPanel1.add(txtId, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 440, 210, -1));
@@ -165,11 +172,10 @@ public class VistaLiquidacion extends javax.swing.JFrame {
         });
         jPanel1.add(cmbLiquidacion, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 310, 190, -1));
 
-        jLabel3.setText("Periodo liquidación:");
+        jLabel3.setText("Periodo liquidación: *");
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 310, 150, -1));
 
-        btnCrearDetalleLiq.setForeground(new java.awt.Color(242, 242, 242));
-        btnCrearDetalleLiq.setBorder(null);
+        btnCrearDetalleLiq.setText("Crear Detalle de Liquidación");
         btnCrearDetalleLiq.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCrearDetalleLiqActionPerformed(evt);
@@ -574,7 +580,12 @@ public class VistaLiquidacion extends javax.swing.JFrame {
                     System.out.println("importe: " + importe);
                     System.out.println("Nombre Clave : " + nombre);
 
-                    
+                    dlc.guardarDetalleLiquidacion(
+                            idInmueble, inmueble,
+                            idUsuario, usuario,
+                            idServicio, servicio,
+                            nombre, importe,
+                            concepto, periodoLiquidacion);
                 }
                 //SI ENCUENTRA EL PERIODO DE LIQUIDACIÓN Y HA LLEGADO
                 //A DEJAR LA LISTA DE MAPS CALCULADO Y SIN ELEMENTOS REPETIDOS
@@ -632,6 +643,7 @@ public class VistaLiquidacion extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(VistaLiquidacion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */

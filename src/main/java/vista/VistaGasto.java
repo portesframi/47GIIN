@@ -10,7 +10,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
-/** Proyecto asignatura Proyectos de programación 
+/** Asignatura Proyecto de ingenieria de software
  *
  * @author frami
  */
@@ -128,21 +128,21 @@ public class VistaGasto extends javax.swing.JFrame {
         });
         jScrollPane2.setViewportView(tblGasto);
 
-        jLabel3.setText("Fecha gasto:");
+        jLabel3.setText("Fecha gasto: *");
 
-        jLabel4.setText("Concepto:");
+        jLabel4.setText("Concepto: *");
 
-        jLabel6.setText("Proveedor:");
+        jLabel6.setText("Proveedor: *");
 
-        jLabel7.setText("Fecha pago:");
+        jLabel7.setText("Fecha pago: *");
 
-        jLabel8.setText("Importe:");
+        jLabel8.setText("Importe: *");
 
         txtId.setEditable(false);
         txtId.setForeground(new java.awt.Color(242, 242, 242));
         txtId.setBorder(null);
 
-        jLabel10.setText("Número comprobante:");
+        jLabel10.setText("Número comprobante: *");
 
         cmbServicio.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
@@ -150,9 +150,9 @@ public class VistaGasto extends javax.swing.JFrame {
             }
         });
 
-        jLabel5.setText("Servicio:");
+        jLabel5.setText("Servicio: *");
 
-        jLabel9.setText("Liquidación:");
+        jLabel9.setText("Liquidación: *");
 
         txtIdServicio.setEditable(false);
         txtIdServicio.setForeground(new java.awt.Color(242, 242, 242));
@@ -517,8 +517,8 @@ public class VistaGasto extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> cmbLiquidacion;
     private javax.swing.JComboBox<String> cmbProveedor;
     private javax.swing.JComboBox<String> cmbServicio;
-    private com.toedter.calendar.JDateChooser jFechaPago;
-    private com.toedter.calendar.JDateChooser jFechaRegistro;
+    public static com.toedter.calendar.JDateChooser jFechaPago;
+    public static com.toedter.calendar.JDateChooser jFechaRegistro;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel3;

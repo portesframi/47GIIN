@@ -39,6 +39,7 @@ public class VistaPrincipal extends javax.swing.JFrame {
     VistaUsuario vu = new VistaUsuario();
     VistaConcepto vc = new VistaConcepto();
     VistaAdministrador va  = new VistaAdministrador();
+    VistaDetalleLiquidacion vdl = new VistaDetalleLiquidacion();
     PrincipalControler pc = new PrincipalControler();
     VistaSuscripcionServicio vss = new VistaSuscripcionServicio();
     ComponentesGeneralControler cgc = new ComponentesGeneralControler();
@@ -75,6 +76,7 @@ public class VistaPrincipal extends javax.swing.JFrame {
         lblTipoUser = new javax.swing.JLabel();
         lblUsuario = new javax.swing.JLabel();
         panelVecino = new javax.swing.JPanel();
+        btnDetalleLiq = new javax.swing.JButton();
         btnSuscripcionServicio = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         btnUsuarios = new javax.swing.JButton();
@@ -113,6 +115,14 @@ public class VistaPrincipal extends javax.swing.JFrame {
 
         panelVecino.setLayout(new java.awt.GridLayout(1, 0));
 
+        btnDetalleLiq.setText("Detalle Liquidación");
+        btnDetalleLiq.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDetalleLiqActionPerformed(evt);
+            }
+        });
+        panelVecino.add(btnDetalleLiq);
+
         btnSuscripcionServicio.setText("Suscripción Servicio");
         btnSuscripcionServicio.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -134,7 +144,7 @@ public class VistaPrincipal extends javax.swing.JFrame {
         jPanel2.add(btnUsuarios);
 
         btnAdministrador.setForeground(new java.awt.Color(242, 242, 242));
-        btnAdministrador.setBorderPainted(false);
+        btnAdministrador.setBorder(null);
         btnAdministrador.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAdministradorActionPerformed(evt);
@@ -143,7 +153,7 @@ public class VistaPrincipal extends javax.swing.JFrame {
         jPanel2.add(btnAdministrador);
 
         btnVecino.setForeground(new java.awt.Color(242, 242, 242));
-        btnVecino.setBorderPainted(false);
+        btnVecino.setBorder(null);
         btnVecino.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnVecinoActionPerformed(evt);
@@ -265,6 +275,10 @@ public class VistaPrincipal extends javax.swing.JFrame {
                 va.dispose();
             }
 
+            if (vdl.isActive() || vdl.isShowing() || vdl.isVisible()) {
+                vdl.dispose();
+            }
+
             if (vss.isActive() || vss.isShowing() || vss.isVisible()) {
                 vss.dispose();
             }
@@ -339,6 +353,13 @@ public class VistaPrincipal extends javax.swing.JFrame {
         vu.setVisible(true);
     }//GEN-LAST:event_btnUsuariosActionPerformed
 
+    private void btnDetalleLiqActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDetalleLiqActionPerformed
+        if (vdl.isActive() || vdl.isShowing() || vdl.isVisible()) {
+            vdl.dispose();
+        }
+        vdl.setVisible(true);
+    }//GEN-LAST:event_btnDetalleLiqActionPerformed
+
     private void btnSuscripcionServicioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSuscripcionServicioActionPerformed
         if (vss.isActive() || vss.isShowing() || vss.isVisible()) {
             vss.dispose();
@@ -379,6 +400,7 @@ public class VistaPrincipal extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public static javax.swing.JButton btnAdministrador;
     public static javax.swing.JButton btnConcepto;
+    public static javax.swing.JButton btnDetalleLiq;
     public static javax.swing.JButton btnGasto;
     public static javax.swing.JButton btnInmueble;
     public static javax.swing.JButton btnLiquidacion;

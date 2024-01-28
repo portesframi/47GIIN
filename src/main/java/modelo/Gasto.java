@@ -2,7 +2,7 @@ package modelo;
 
 import java.util.Date;
 
-/** Proyecto asignatura Proyectos de programación 
+/** Asignatura Proyecto de ingenieria de software
  *
  * @author frami
  */

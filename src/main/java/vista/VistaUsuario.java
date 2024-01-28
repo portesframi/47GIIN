@@ -67,20 +67,20 @@ public class VistaUsuario extends javax.swing.JFrame {
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         jPanel1.add(txtEmail, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 230, 122, -1));
 
-        jLabel2.setText("Contraseña");
+        jLabel2.setText("Contraseña *");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 210, -1, -1));
 
-        jLabel3.setText("Tipo de usuario");
+        jLabel3.setText("Tipo de usuario *");
         jPanel1.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 280, -1, -1));
 
-        jLabel4.setText("Nombres");
+        jLabel4.setText("Nombres *");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 280, -1, -1));
 
-        jLabel5.setText("Email");
+        jLabel5.setText("Email *");
         jPanel1.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 210, -1, -1));
         jPanel1.add(txtNombreAppUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 230, 122, -1));
 
-        jLabel6.setText("Nombre de usuario");
+        jLabel6.setText("Nombre de usuario *");
         jPanel1.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 210, -1, -1));
 
         cmbTipoUsuario.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Seleccione una opción", "Administrador", "Vecino" }));
@@ -95,15 +95,15 @@ public class VistaUsuario extends javax.swing.JFrame {
         jPanel1.add(txtPass, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 230, 122, -1));
         jPanel1.add(txtNombresUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 300, 122, -1));
 
-        jLabel7.setText("Rep. Contraseña");
+        jLabel7.setText("Rep. Contraseña *");
         jPanel1.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 210, -1, -1));
         jPanel1.add(txtDni, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 300, 122, -1));
 
-        jLabel8.setText("DNI");
+        jLabel8.setText("DNI *");
         jPanel1.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 280, -1, -1));
         jPanel1.add(txtTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 300, 122, -1));
 
-        jLabel9.setText("Teléfono");
+        jLabel9.setText("Teléfono *");
         jPanel1.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 280, -1, -1));
 
         txtRepPass.setText("....");

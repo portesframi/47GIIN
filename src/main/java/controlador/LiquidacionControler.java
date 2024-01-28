@@ -33,7 +33,7 @@ import modelo.Liquidacion;
 import providers.LiquidacionProvider;
 import vista.VistaLiquidacion;
 
-/** Proyecto asignatura Proyectos de programación 
+/** Asignatura Proyecto de ingenieria de software
  *
  * @author frami
  */

@@ -12,7 +12,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
-/** Proyecto asignatura Proyectos de programación 
+/** Asignatura Proyecto de ingenieria de software
  *
  * @author frami
  */
@@ -175,7 +175,7 @@ public class VistaSuscripcionServicio extends javax.swing.JFrame {
 
         panelInputsIzquierda.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setText("Servicio:");
+        jLabel1.setText("Servicio: *");
         panelInputsIzquierda.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 70, -1, -1));
 
         txtId.setForeground(new java.awt.Color(242, 242, 242));
@@ -183,7 +183,7 @@ public class VistaSuscripcionServicio extends javax.swing.JFrame {
         txtId.setBorder(null);
         panelInputsIzquierda.add(txtId, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 320, 150, -1));
 
-        jLabel2.setText("Inmueble:");
+        jLabel2.setText("Inmueble: *");
         panelInputsIzquierda.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, -1, -1));
 
         cmbServicio.addItemListener(new java.awt.event.ItemListener() {
@@ -207,7 +207,7 @@ public class VistaSuscripcionServicio extends javax.swing.JFrame {
         });
         panelInputsIzquierda.add(cmbUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 20, 150, -1));
 
-        jLabel3.setText("Usuario:");
+        jLabel3.setText("Usuario: *");
         panelInputsIzquierda.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 20, -1, -1));
         panelInputsIzquierda.add(txtNombreUsuario, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 180, 150, -1));
 
@@ -235,14 +235,19 @@ public class VistaSuscripcionServicio extends javax.swing.JFrame {
         panelInputsDerecha.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
         panelInputsDerecha.add(jDateAlta, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 30, 127, -1));
 
-        jLabel4.setText("Fecha Alta:");
+        jLabel4.setText("Fecha Alta: *");
         panelInputsDerecha.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 30, -1, -1));
         panelInputsDerecha.add(jDateBaja, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 90, 127, -1));
 
         jLabel6.setText("Fecha Baja:");
         panelInputsDerecha.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 90, -1, -1));
 
-        cheIsActiva.setText("Es activa");
+        cheIsActiva.setText("Es activa *");
+        cheIsActiva.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cheIsActivaActionPerformed(evt);
+            }
+        });
         panelInputsDerecha.add(cheIsActiva, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 140, -1, -1));
 
         txtIdInmueble.setForeground(new java.awt.Color(242, 242, 242));
@@ -476,6 +481,10 @@ public class VistaSuscripcionServicio extends javax.swing.JFrame {
             Logger.getLogger(VistaSuscripcionServicio.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_btnRecargarDesplegablesActionPerformed
+
+    private void cheIsActivaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cheIsActivaActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cheIsActivaActionPerformed
 
     /** the command line arguments
      * @param args the command line arguments
